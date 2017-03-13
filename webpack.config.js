@@ -27,7 +27,8 @@ module.exports = {
       './app/components'
     ],
     alias: {
-      applicationStyles: 'app/styles/app.scss'
+      applicationStyles: 'app/styles/app.scss',
+      EtherTest: 'app/components/EtherTest.jsx'
 
     },
     extensions: ['', '.js', '.jsx']

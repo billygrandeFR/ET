@@ -101,10 +101,9 @@
 	    Route = _require.Route,
 	    Router = _require.Router,
 	    IndexRoute = _require.IndexRoute,
-	    hashHistory = _require.hashHistory,
-	    browserHistory = _require.browserHistory;
+	    hashHistory = _require.hashHistory;
 
-	var Main = __webpack_require__(240);
+	var EtherTest = __webpack_require__(240);
 
 	// load foundation
 	__webpack_require__(241);
@@ -112,11 +111,7 @@
 	// Load css
 	__webpack_require__(245);
 
-	ReactDOM.render(React.createElement(
-	  Router,
-	  { history: hashHistory },
-	  React.createElement(Route, { path: '/', component: Main })
-	), document.getElementById('app'));
+	ReactDOM.render(React.createElement(EtherTest, null), document.getElementById('app'));
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
 
 /***/ },
@@ -26604,20 +26599,19 @@
 
 	var React = __webpack_require__(8);
 
-	var Main = function Main(props) {
-	  return React.createElement(
-	    'div',
-	    null,
-	    React.createElement(
-	      'h1',
-	      null,
-	      'main.jsx rendered'
-	    ),
-	    props.children
-	  );
-	};
+	var EtherTest = React.createClass({
+	  displayName: 'EtherTest',
 
-	module.exports = Main;
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      null,
+	      'EtherTest Component'
+	    );
+	  }
+	});
+
+	module.exports = EtherTest;
 
 /***/ },
 /* 241 */
